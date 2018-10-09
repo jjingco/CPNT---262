@@ -69,3 +69,8 @@ function sumofLowNumbers (number1,number2,number3,number4,number5){
 // console.log(sumofLowNumbers(9,6,9,9,9))
 
 
+
+
+// 7.
+https://github.com/jjingco/CPNT---262/blob/master/Day%201/Brightspace%20Exercise/codes.js
+
