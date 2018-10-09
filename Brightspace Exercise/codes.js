@@ -72,5 +72,6 @@ function sumofLowNumbers (number1,number2,number3,number4,number5){
 
 
 // 7.
-https://jjingco.github.io/CPNT---262/Day 1/Brightspace Exercise/index.html
+https://jjingco.github.io/CPNT---262/Brightspace Exercise/index.html
+
      
