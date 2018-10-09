@@ -1,0 +1,59 @@
+-Web Client & Server Programing
+-Beginning JS by Jeremy McPeak - consult the book but no assigned readings
+-Grading:
+	Excercises - 25%
+	Final Project - 60%  
+		-website for travel agency 
+		-all-day workshop --> Project is due at EOD 9
+	participation - 15%
+-everything found on Brightspace website
+
+-What is Javascript:
+	-it's an interpreted language like Ruby and PHP
+	-the conversion happens when you execute
+	-working with Vanilla JS
+	-link to external files through script tags
+
+-to open browser console:
+	windows: ctrl + SHIFT + J
+	Mac: Command + Option + J
+
+-Data Types & Variables
+	-statements typically end in ";"
+	-long comments = /* <comment> */ 
+	-short comments = // <commment>
+	-alert is the popup box
+	-directly on the page is document.write('Your message') 
+	or console.log('your message')
+
+-Variables
+	-declare and initialize in one statement: 
+		var y = 2;
+		console.log(y);
+	-you want variables to start with letters, $, or _
+	-case sensitive 
+	-prefer camelCase for multipleWords instead of under_score
+	-pick a naming convention and stick with it
+
+-Primitive Data Types
+	-string, numbers, boolean
+	-Arithmetic Operators: eg -, +, *, /, % (modulus - remainder of...)
+		-eg: 20%7 = 6 (20/7 has remainder of 6)
+	-if you want to use quotes for a long string use double quotes for the 
+	one you want as a quoted sting and single quotes for the whole string
+	- "+=" adds two strings together for variables
+
+-JS can only recognize one value type per variable so if you mix a number with
+a string then JS will turn the number into a string
+
+-Variable Scobe -Global (definded outside a function) vs local (inside a function)
+
+-equal means same values, identical means same values AND same type
+	eg Equals: 77 == '77'   
+	vs Identical: 77 === 77
+
+
+
+
+
+	
