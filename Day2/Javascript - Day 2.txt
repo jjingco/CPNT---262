@@ -1,0 +1,37 @@
+LOOPS:
+-while loops will go on forever until a condition is met --> if no condition it will crash your browser
+-for loops use counters at the very beginning -it's a local variable to the loop
+-break statements are used to get out of the loop
+
+ARRAYS:
+-ordered lists of values
+-variable.length
+-js are zero-indexed --> counting starts at 0
+
+
+----------------------------------------------------------------------------
+
+CAREER PRACTICUM PRESENTATION <<RANDOM>>
+-My Career Hub 
+-pratciums are 320 hours or 8 weeks
+-volunteering can be practicum: www.charityvillage.com
+-work.experience@sait.ca with the following:
+	-Name of Employer
+	-Pair or Unpaid
+	-Start Date
+-practicum documents are due 7 days after practicum start --> 2 documents
+-end of practicum documents due 7 days after practicum end date --> 2 documents
+-contact Mark for site visits at 4th week of practicum
+-if you're done by april, convocation is june 2019
+-5 yrs to finish practicum
+-mark.jensen@sait.ca  403-210-5631
+	-behavioural interviews --> STAR
+	-technical interviews ---> STAR
+
+-------------------------------------------------------------------------------
+
+
+
+OBJECTS:
+-lets us store a collection of properties
+-
