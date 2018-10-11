@@ -9,7 +9,7 @@
  if (Modernizr.geolocation) {
     var geoCat =  document.createElement('img');
     geoCat.src = 'http://placekitten.com/200/300';
-    pageBody.appendChild(geoCat)
+    pageBody.appendChild(geoCat);
 
 
  } else {
