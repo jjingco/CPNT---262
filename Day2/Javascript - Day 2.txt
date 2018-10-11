@@ -34,4 +34,4 @@ CAREER PRACTICUM PRESENTATION <<RANDOM>>
 
 OBJECTS:
 -lets us store a collection of properties
--
+https://projecteuler.net/archives

@@ -1,0 +1,19 @@
+BROWSER OBJECTS:
+-eg window.alert()
+
+THE LOCATION OF AN OBJECT
+-location.replace --> replaces and you can't go back
+-location.href --> you can go back 
+
+GEOLOCATION
+-eg a weather app uses your phone's location in order to figure out the weather or store locations
+	-if anything goes wrong you can create an alert saying something went wrong
+	-fall back to a manual locator
+
+FEATURE DETECTION
+-newer browsers support geolocation, but some older ones don't 
+-you need to detect whether or not computers can support your application
+BROWSER STACK --> WEBSITE THAT ALLOWS YOU TO TEST ON DIFFERENT BROWSERS
+
+
+
