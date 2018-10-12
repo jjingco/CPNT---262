@@ -1,0 +1,17 @@
+#square {
+    width: 100px;
+    height: 100px;
+    background: peru;
+}
+
+body {
+    background: rgb(201, 229, 245);
+}
+
+
+#mybutton {
+    border: 1.5px grey;
+    font-size: 3em;
+    margin: 100px;
+    background:peru;
+}
