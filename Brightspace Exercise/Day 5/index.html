@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>Create a Quiz</title>
+</head>
+<body>
+    <h1>What Kind of Traveler Are you?</h1>
+    <h2>Please answer the following</h2>
+
+    <form action="" name="myForm">
+        <h3>What kinds of food would you see on your table for sunday brunch?</h3>
+        <p><input type="checkbox" name="food" value="nothing" checked> 
+            <label> *hits the alarm clock* NOTHING...lunch is only a couple of hours away.</label></p>
+        <p><input type="checkbox" name="food" value="fruits"> 
+            <label>I need energy! I need fruits!</label></p>
+        <p><input type="checkbox" name="food" value="bacon"> 
+            <label>Anything bacon...</label></p>
+        <p><input type="checkbox" name="food" value="pastries"> 
+            <label> Croissants, eclairs, cakes...Bring on the carbs!</label></p>
+        <button class="next">Next Question</button>
+        
+        <div id="clothes">
+            <h3>Are you more jeans and a t-shirt or a blazer kind of gal? </h3>
+            <p> <input type="radio" name='clothes' value='jeans'checked> <label> Hair down and definitely in jeans!</label></p>
+            <p> <input type="radio" name='clothes' value='blazer'> <label> Show some style! Blazer all the way!</label></p>
+            <button class="next">Next Question</button>
+            <button class="back">Previous</button>
+        </div>
+
+        <div id="lottery">
+            <h3>What would you do if you won the lottery tomorrow?</h3>
+            <p> <input type="radio" name='lottery' value='bills' checked> <label> It's about time to pay off those bills. (I guess?)</label></p>
+            <p> <input type="radio" name='lottery' value='invest'> <label> Invest...Invest....Invest...</label></p>
+            <p> <input type="radio" name='lottery' value='shop'> <label> Shopping spreeeeeeee!</label></p>
+            <p> <input type="radio" name='lottery' value='island'> <label> Buy my own island and hire monkeys!</label></p>
+            <button class="next">Next Question</button>
+            <button class="back">Previous</button>
+        
+        </div>
+
+        <div id="city">
+            <h3>Which city would you most likely visit?</h3>
+            <select name="city">
+                <option  value="spain">Madrid</option>
+                <option  value="uk">London</option>
+                <option  value="france">Paris</option>
+                <option  value="usa">Neww York</option>
+            </select>
+            <button class="next">Next Question</button>
+            <button class="back">Previous</button>
+        </div>
+
+        <div id="user">
+            <h3>Almost there...</h3>
+            <p><label> Name: </label><input type="text" name="nameForm" ></p> 
+            <h3>Done?</h3>
+            <p>
+                <input type="submit" id="submit" value="Submit">
+            </p>
+        </div>
+
+    </form>
+
+    <!-- score message -->
+    <p id="high-score">Contrats! You're a real world traveler! You chase after the best parts of this world and you love to laugh while doing it!</p>
+    <p id="default">Not quite a world traveler, but hey, there's nothing with wanting to stick to your comfy bed!</p>    
+    
+
+
+    <script src="./codes.js"></script>
+
+</body>
+</html>

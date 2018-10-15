@@ -1,0 +1,21 @@
+Create a Quiz
+
+Create 5 or more quiz questions with a total of 3 different types of inputs.
+
+Display the questions on your page.
+
+Require that each question be filled out.
+
+When a user submits the quiz, score it and display their score.
+
+Once you've finished creating your quiz, 
+modify your code to only show one quiz question at a time.
+
+Consider everything you've learned up through now. 
+Make your quiz look and feel good. This could be a potential project 
+for your portfolio.
+
+When you are done, create a Github page for this project and 
+submit a link to the actual quiz website.
+
+

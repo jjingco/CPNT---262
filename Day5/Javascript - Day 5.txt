@@ -1,0 +1,10 @@
+
+-look up match, replace, search and split methods for regExp
+-https://regexone.com/
+-Regular Expressions:
+	-wild cards = .
+	-if you need the dot  = \.
+	-matching specific characters [characters] but it only takes one value per string
+	-[^character] means match all characters except for that one eg [^a]bc 
+		-match b and c but not a
+	

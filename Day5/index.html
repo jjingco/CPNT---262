@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="./style.css">
+
+    <title>Test Page</title>
+</head>
+<body>
+    <div class="wrapper">
+        <div>
+            <h1> Welcome to my Form!</h1>
+            <h2>Here is an example of a newsletter:</h2>
+        </div>
+        <form action="" name="myForm">
+            <label> Name: </label><input type="text" name="nameForm" required/> 
+            <br>
+            <label> Sports, Politics, or Current Events? </label><input type="text" name="news" 
+                    pattern = "politics|sports|current events|politics |sports |Politics|Sports|Current Events|Politics |Sports |Current events|current Events" 
+                    maxlength ='14' required/> 
+            <br>
+            <label> Email: </label><input type="email" name="email" placeholder='user@email.com' required/> 
+            <br>
+            <label> Comments: </label><Textarea name="txtArea" required maxlength="120"></Textarea>
+            <br>
+            
+            <p>How many times a month would you like to recieve it? </p>
+            <label> Daily</label> <input type="checkbox" name="feature" value="daily" checked/> 
+            <label> Weekly</label> <input type="checkbox" name="feature" value="weekly"/>  
+            <label> Monthly</label> <input type="checkbox" name="feature" value="monthly"/>  
+            <br>
+            
+            <input type="submit" name="sub" class="subButton">
+        
+        </form>
+
+       
+            
+    </div>
+
+
+    <script src="./codes.js"></script>
+</body>
+</html>

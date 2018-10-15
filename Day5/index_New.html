@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <title>Custom Validation</title>
+</head>
+<body>
+    <div class="wrapper">
+        <div>
+            <h1> Welcome to my Form!</h1>
+            <h2>Here is an example of a newsletter:</h2>
+        </div>
+        <form action="" name="form1">
+            Please Enter the following details:
+            <p>
+                Name: <input type="text" id="txtName" name="txtName">
+            </p>
+            <p>
+                Age: <input type="text" name="txtAge" id="txtAge">
+            </p>
+            <p>
+                <input type="submit" name="submit" id="submit" value="Submit">
+            </p>
+            
+            <!-- Error Messages -->
+            <p id="errorName" style="display:none;"> Please enter your name.</p>
+            <p id="errorAge" style="display:none;"> Please enter your age.</p>
+            <p id="errorRange" style="display:none;"> Sorry you're not old enough for this site.</p>
+        
+        </form>
+
+       
+            
+    </div>
+
+
+    <script src="./codes_new.js"></script>
+</body>
+</html>
