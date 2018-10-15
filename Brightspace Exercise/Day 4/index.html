@@ -10,31 +10,13 @@
     <title>JS Quote Machine</title>
 </head>
 <body>
-<div class="container">
+<div class="container" >
     <h1>Welcome to the Quote Machine</h1>
-    <!-- <div class="hero"> -->
-        <div id="quote1"></div>
-        <div id="mountain"></div>
-        <!-- bouncing down from the mountains (left)--mountain div -->
-
-        <div id="quote2"></div>
-        <div id="car"></div>
-        <!-- speeding in stop for 5 seconds and leave fast no div-->
-
-        <div id="quote3"></div>
-        <div id="building1"></div>
-        <!-- peaking out of buildings div -->
-
-        <div id="quote4"></div>
-        <div id="building2"></div>
-        <!-- peaking out of buildings div -->
-
-        <div id="quote5"></div>
-        <div id="wave1"></div>
-        <div id="wave2"></div>
-        <div id="wave3"></div>
-        <!-- popping out of the water (multiple divs for the water) -->
-    <!-- </div> -->
+    <div id="quote-container"> 
+        <div id="quote"></div>
+        <button id="back" onclick="navBack()"> Back</button>
+        <button id="forward" onclick="navForward()"> Forward</button>
+    </div>
     <script src="./codes.js"></script>
 </div>
 

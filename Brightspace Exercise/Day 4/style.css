@@ -10,13 +10,19 @@ h1 {
     background-image: url('./Images/hero.jpg');
     background-size: cover;
     background-position: 20% 50%;
-
     margin-top: 100px;
     height: 500px;
     opacity: 0.95;;
 }
 
-div.container {
-    padding: 0;
+
+
+button {
+    position: relative;
+    margin-top: 200px;
+}
+
+#quote-container {
+    text-align: center;
 }
 

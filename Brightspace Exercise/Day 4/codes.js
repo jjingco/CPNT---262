@@ -3,32 +3,23 @@ var quotes = ['"When you reach the end of your rope, tie a knot in it and hang o
                 '"Good judgment comes from experience, and a ot of that comes from bad judgment."--Will Rogers',
                 '"If you cannot do great things, do small things in a great way." --Napoleon Hill',
                 '"The secret of getting ahead is getting started." --Mark Twain']
-var quote1 = quotes[0];
-var quote2 = quotes[1];
-var quote3 = quotes[2];
-var quote4 = quotes[3];
-var quote5 =  document.getElementById('quote5');
-quote5.innerHTML = quotes[4];
-quote5.style.position ='absolute';
-quote5.style.left ='0';
-quote5.style.backgroundColor ='red';
+var quote =  document.getElementById('quote');
+quote.style.position ='absolute';
+quote.style.backgroundColor ='red';
 
-
-
-
-var forward = true;
-
-function quoteSlide() {
-
-    var currentLeft = parseInt(quote5.style.left);
-
-    if (forward) {
-        quote5.style.left = (currentLeft +10) + 'px';
-    } 
+function quoteMachine() {
+    for (var i = 0; i < quotes.length; i++) {
+        quote.innerHTML = quotes[i];
+        console.log(quotes[i]); 
+        // buttons
+        function navBack(event) {
+            quote.innerHTML = quotes[i-1];
+            console.log(quotes[i-1]);}
+        function navForward(event) {
+            quote.innerHTML = quotes[i+1];
+            console.log(quotes[i+1]);}
+    }
 }
-
-setInterval(quoteSlide,50);
-
+setInterval(quoteMachine,3000)
 
 
-https://javascript.info/js-animation
