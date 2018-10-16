@@ -6,3 +6,14 @@
 #user {
     display: none;
 }
+
+
+#errorFood,
+#errorOutfit,
+#errorCity,
+#errorAction,
+#errorName,
+#high-score,
+#default {
+    display: none;
+}

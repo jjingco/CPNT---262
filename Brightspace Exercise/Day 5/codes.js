@@ -2,11 +2,84 @@ var submitButton = document.myForm.submit;
 var highScore = document.getElementById('high-score');
 var defaultMsg = document.getElementById('default');
 
+// validating Food portion
+function check1() {
+    var chk1 = document.myForm.nothing.checked || document.myForm.fruits.checked
+                || document.myForm.bacon.checked || document.myForm.pastries.checked
+    if (chk1 == false){
+        event.preventDefault();
+        document.getElementById('errorFood').style.display="block";
+    }
+    else {
+        event.preventDefault();
+        document.getElementById('breakfast').style.display ='none';
+        document.getElementById('clothes').style.display = 'block';
+    }   
+}
 
+// Validating clothes
+function check2() {
+    var chk2 = document.myForm.jeans.checked || document.myForm.blazer.checked
+    if (chk2 == false){
+        event.preventDefault();
+        document.getElementById('errorOutfit').style.display="block";
+    }
+    else {
+        event.preventDefault();
+        document.getElementById('clothes').style.display ='none';
+        document.getElementById('lottery').style.display = 'block';
+    }   
+}
 
-// First Question
+// Validating lottery
+function check2() {
+    var chk2 = document.myForm.jeans.checked || document.myForm.blazer.checked
+    if (chk2 == false){
+        event.preventDefault();
+        document.getElementById('errorOutfit').style.display="block";
+    }
+    else {
+        event.preventDefault();
+        document.getElementById('clothes').style.display ='none';
+        document.getElementById('lottery').style.display = 'block';
+    }   
+}
+
+// Validating city
+function check3() {
+    var chk3 = document.getElementById("city");
+    var strchk = chk3.options[chk3.selectedIndex].value;
+    if (strchk == 0){
+        event.preventDefault();
+        document.getElementById('errorOutfit').style.display="block";
+    }
+    else {
+        event.preventDefault();
+        document.getElementById('lottery').style.display ='none';
+        document.getElementById('city').style.display = 'block';
+    }   
+}
+
+// Validating user
+function check4() {
+    var chk2 = document.myForm.nameForm.value;
+    if (!chk2){
+        event.preventDefault();
+        document.getElementById('errorName').style.display="block";
+    }
+    else {
+        event.preventDefault();
+        document.getElementById('city').style.display ='none';
+        document.getElementById('user').style.display = 'block';
+    }   
+}
+
+// Evaluating All the Questions
 submitButton.addEventListener('click', function(event){
-    var food = document.myForm['food'];
+    var nothing = document.myForm['nothing'];
+    var fruits = document.myForm['fruits'];
+    var bacon = document.myForm['bacon'];
+    var pastries = document.myForm['pastries'];
     var clothes = document.myForm['clothes'].value;
     var lottery = document.myForm['lottery'].value;
     var city = document.myForm['city'].value;
@@ -16,16 +89,16 @@ submitButton.addEventListener('click', function(event){
     var score = 0
 
 
-    if (food == 'nothing') {
+    if (nothing == 'nothing') {
         score = score + 0;
     }
-    if (food == 'fruits') {
+    if (fruits == 'fruits') {
         score = score + 1;
     }
-    if (food == 'bacon') {
+    if (bacon == 'bacon') {
         score = score + 2;
     }
-    if (food == 'pastries') {
+    if (pastries == 'pastries') {
         score = score + 3;
     }
     if (clothes == 'jeans') {
@@ -70,4 +143,4 @@ submitButton.addEventListener('click', function(event){
 
 
 
-// validate checkboxes
+
