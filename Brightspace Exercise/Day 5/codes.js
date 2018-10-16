@@ -69,8 +69,8 @@ function check5() {
     }
     else {
         event.preventDefault();
-        document.getElementById('city').style.display ='none';
-        document.getElementById('user').style.display = 'block';
+        document.getElementById('user').style.display ='none';
+        document.getElementById('outcomes').style.display = 'block';
     }   
 }
 
@@ -135,10 +135,12 @@ submitButton.addEventListener('click', function(event){
     if (score > 7) {
         highScore.style.display = 'block';
     } 
+
     if (score <= 7) {
-        defaultMsg.style.display ="block";
+        defaultMsg.style.display ='block';
     }
     
+    console.log(score);
 })
 
 
