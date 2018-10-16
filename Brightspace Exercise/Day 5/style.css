@@ -17,3 +17,16 @@
 #default {
     display: none;
 }
+
+
+body {
+    font-family: cursive;
+}
+
+.wrapper {
+    margin: 200px;
+}
+
+h1, h2 {
+    color: rgb(0, 131, 131);
+}
