@@ -1,6 +1,7 @@
 var submitButton = document.myForm.submit;
 var highScore = document.getElementById('high-score');
 var defaultMsg = document.getElementById('default');
+var done = true;
 
 // validating Food portion
 function check1() {
@@ -66,11 +67,13 @@ function check5() {
     if (!chk5){
         event.preventDefault();
         document.getElementById('errorName').style.display="block";
+        done = false;
     }
     else {
         event.preventDefault();
         document.getElementById('user').style.display ='none';
         document.getElementById('outcomes').style.display = 'block';
+        done = true;
     }   
 }
 
@@ -132,11 +135,11 @@ submitButton.addEventListener('click', function(event){
     if (city == 'usa') {
         score = score + 1;
     }
-    if (score > 7) {
+    if (score > 7 && done == true) {
         highScore.style.display = 'block';
     } 
 
-    if (score <= 7) {
+    if (score <= 7 && done == true) {
         defaultMsg.style.display ='block';
     }
     

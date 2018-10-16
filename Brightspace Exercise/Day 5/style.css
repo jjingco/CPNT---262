@@ -24,10 +24,20 @@ body {
 }
 
 .wrapper {
-    margin: 200px;
+    margin: 100px auto;
+    width: 70%;
+    padding: 10px;
     background: rgb(255, 211, 166);
 }
 
 h1, h2 {
     color: rgb(0, 131, 131);
+}
+
+button {
+    background-color: rgb(226, 110, 1);
+    border: none;
+    color: white;
+    padding: 15px 20px;
+    font-weight: 800;
 }
