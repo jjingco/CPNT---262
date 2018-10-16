@@ -33,24 +33,9 @@ function check2() {
 
 
 // Validating lottery
-function check2() {
-    var chk2 = document.myForm.jeans.checked || document.myForm.blazer.checked
-    if (chk2 == false){
-        event.preventDefault();
-        document.getElementById('errorOutfit').style.display="block";
-    }
-    else {
-        event.preventDefault();
-        document.getElementById('clothes').style.display ='none';
-        document.getElementById('lottery').style.display = 'block';
-    }   
-}
-
-// Validating city
 function check3() {
-    var chk3 = document.getElementById("city");
-    var strchk = chk3.options[chk3.selectedIndex].value;
-    if (strchk == 0){
+    var chk3 = document.myForm.jeans.checked || document.myForm.blazer.checked
+    if (chk3 == false){
         event.preventDefault();
         document.getElementById('errorOutfit').style.display="block";
     }
@@ -61,10 +46,24 @@ function check3() {
     }   
 }
 
-// Validating user
+// Validating city
 function check4() {
-    var chk2 = document.myForm.nameForm.value;
-    if (!chk2){
+    var chk4 = document.getElementById("cityQ");
+    if (chk4.value == ""){
+        event.preventDefault();
+        document.getElementById('errorCity').style.display="block";
+    }
+    else {
+        event.preventDefault();
+        document.getElementById('city').style.display ='none';
+        document.getElementById('user').style.display = 'block';
+    }   
+}
+
+// Validating user
+function check5() {
+    var chk5 = document.myForm.nameForm.value;
+    if (!chk5){
         event.preventDefault();
         document.getElementById('errorName').style.display="block";
     }
@@ -81,9 +80,10 @@ submitButton.addEventListener('click', function(event){
     var fruits = document.myForm['fruits'];
     var bacon = document.myForm['bacon'];
     var pastries = document.myForm['pastries'];
-    var clothes = document.myForm['clothes'].value;
+    var clothes = document.myForm['jeans'].value;
+    var clothes = document.myForm['blazer'].value;
     var lottery = document.myForm['lottery'].value;
-    var city = document.myForm['city'].value;
+    var city = document.myForm['cityQ'].value;
     highScore.style.display = 'none';
     defaultMsg.style.display ='none';
     event.preventDefault();
