@@ -16,6 +16,7 @@ function check1() {
         document.getElementById('clothes').style.display = 'block';
     }   
 }
+<<<<<<< HEAD
 
 // Validating clothes
 function check2() {
@@ -51,6 +52,49 @@ function check3() {
     var chk3 = document.getElementById("city");
     var strchk = chk3.options[chk3.selectedIndex].value;
     if (strchk == 0){
+=======
+
+// Validating clothes
+function check2() {
+    var chk2 = document.myForm.jeans.checked || document.myForm.blazer.checked
+    if (chk2 == false){
+>>>>>>> d0babc7a3a83e2bf39be379b5088edaea72388d5
+        event.preventDefault();
+        document.getElementById('errorOutfit').style.display="block";
+    }
+    else {
+        event.preventDefault();
+<<<<<<< HEAD
+        document.getElementById('lottery').style.display ='none';
+        document.getElementById('city').style.display = 'block';
+    }   
+}
+
+=======
+        document.getElementById('clothes').style.display ='none';
+        document.getElementById('lottery').style.display = 'block';
+    }   
+}
+
+// Validating lottery
+function check2() {
+    var chk2 = document.myForm.jeans.checked || document.myForm.blazer.checked
+    if (chk2 == false){
+        event.preventDefault();
+        document.getElementById('errorOutfit').style.display="block";
+    }
+    else {
+        event.preventDefault();
+        document.getElementById('clothes').style.display ='none';
+        document.getElementById('lottery').style.display = 'block';
+    }   
+}
+
+// Validating city
+function check3() {
+    var chk3 = document.getElementById("city");
+    var strchk = chk3.options[chk3.selectedIndex].value;
+    if (strchk == 0){
         event.preventDefault();
         document.getElementById('errorOutfit').style.display="block";
     }
@@ -61,6 +105,7 @@ function check3() {
     }   
 }
 
+>>>>>>> d0babc7a3a83e2bf39be379b5088edaea72388d5
 // Validating user
 function check4() {
     var chk2 = document.myForm.nameForm.value;
