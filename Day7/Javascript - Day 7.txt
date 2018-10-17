@@ -1,0 +1,8 @@
+JavaScript Object Notation - JSON
+-the good thing about JSON is that it works in other sources
+-cookies are outdated: there's only a max amount of cookies
+	you can have per location ---> now we're using the modern "web storage"
+		-session storage --> goes away when user closes browser
+		-local storage --> always there until deleted
+-for AJAX, you have to put the functions inside the fetch enviorment or
+	the variable will not be defined.
