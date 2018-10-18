@@ -1,0 +1,202 @@
+/* SAIT JavaScript Project - CPNT 262 */
+/* by Joy Jingco  */
+
+/* ************************   FOR ALL PAGES ********************************* */
+/* * * * * * * * * * * * * * * * * * * * *
+General
+* * * * * * * * * * * * * * * * * * * * */
+
+.wrapper {
+    width: 80%;
+    margin: 0 auto;
+    max-width: 1000px;
+  }
+  
+  
+  /* * * * * * * * * * * * * * * * * * * * *
+  Header
+  * * * * * * * * * * * * * * * * * * * * */
+  header {
+      background: #251919
+  }
+  
+  .logo {
+      width: 250px;
+      color: rgb(124, 226, 230);
+      margin-right: auto;
+      font-family: 'Berkshire Swash', cursive;
+      font-size: 1.5em;
+      line-height: 0.9;
+  }
+  
+  .logo span {
+      margin-left: 10px;
+  }
+  
+  header ul {
+      margin-bottom: 0;
+      display: flex;
+      font-family: 'Open Sans', sans-serif;
+  }
+  
+  header ul li {
+      list-style: none;
+  }
+  
+  header ul li a {
+      height: 66px;
+      padding: 0 22px;
+      color: rgb(161, 227, 230);
+  
+      display: flex;
+      align-items: center;
+  }
+  
+  header ul li a:hover {
+      background: rgb(69, 185, 189);
+      text-decoration: none;
+      color: black;
+  }
+  
+  .hamburger-icon {
+      display: none;
+      background: transparent;
+      border: none;
+  }
+  
+  .menu {
+      width: 300px;
+      background:  #251919;
+      height: 100vh;
+      position: absolute;
+      top: 0;
+      left: 0;
+      transition:0.4s;
+      transform: translate(0px, 0px);
+      z-index: 1;
+  }
+  
+  .closed {
+      transform: translate(-500px, 0px);
+  }
+  
+  #close-button {
+      background: transparent;
+      color: rgb(69, 185, 189);
+      padding: 10px;
+      border: none;
+  }
+  
+  header .mobile-menu ul {
+      display: block;
+  }
+  
+  #close-button:hover {
+      background: rgb(69, 185, 189);
+      text-decoration: none;
+      color: black;
+  }
+
+/* * * * * * * * * * * * * * * * * * * * *
+Media Query
+* * * * * * * * * * * * * * * * * * * * */
+
+@media screen and (max-width: 800px) {
+
+    .hamburger-icon {
+        display: block;
+        color: rgb(69, 185, 189);
+    }
+    .desktop-menu ul {
+        display: none;
+    }
+    header {
+        height: 60px;
+    }
+}
+
+
+/* * * * * * * * * * * * * * * * * * * * *
+Footer
+* * * * * * * * * * * * * * * * * * * * */
+footer {
+    height: 150px;
+    background:#251919;
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+footer h2 {
+    text-align: center;
+    padding-top: 40px;
+    font-size: 2.5em;
+    font-family: 'Tangerine', cursive;
+    color:rgb(161, 227, 230);
+}
+
+
+/* * * * * * * * * * * * * * * * * * * * *
+Index Page
+* * * * * * * * * * * * * * * * * * * * */
+.hero {
+    height: 900px;
+    background-image:  
+        linear-gradient(
+        180deg, 
+        rgba(0, 0, 0, 0.8), 
+        rgba(0, 0, 0, 0)), 
+        url(./Photos/jeshoots-com-722888-unsplash.jpg);
+    background-size: cover;
+    color:rgb(255, 255, 255);
+    padding-top: 100px;
+    background-position: 50% 10%;
+    font-family: 'Open Sans', sans-serif;
+    background-repeat: no-repeat;
+}
+
+.hero-content h1 {
+    margin-top: 150px;
+    font-family:'Berkshire Swash', cursive;
+    font-size: 1.75em;
+}
+
+
+/* * * * * * * * * * * * * * * * * * * * *
+Contact Page
+* * * * * * * * * * * * * * * * * * * * */
+.hero-contact {
+    height: 900px;
+    background-image: url(./Photos/ethan-robertson-134952-unsplash.jpg);
+    background-size: cover;
+    padding-top: 100px;
+    background-position: 50% 10%;
+    font-family: 'Open Sans', sans-serif;
+    background-repeat: no-repeat;
+}
+
+/* * * * * * * * * * * * * * * * * * * * *
+Customer Registration Page
+* * * * * * * * * * * * * * * * * * * * */
+.hero-registration {
+    height: 900px;
+    background-image: url(./Photos/anthony-delanoix-43718-unsplash.jpg);
+    background-size: cover;
+    padding-top: 100px;
+    background-position: 50% 90%;
+    font-family: 'Open Sans', sans-serif;
+    background-repeat: no-repeat;
+}
+
+
+/* * * * * * * * * * * * * * * * * * * * *
+Vacation Page
+* * * * * * * * * * * * * * * * * * * * */
+.hero-vacation {
+    height: 900px;
+    background-image:url(./Photos/ruslan-bardash-349192-unsplash.jpg);
+    background-size: cover;
+    padding-top: 100px;
+    background-position: 50% 90%;
+    font-family: 'Open Sans', sans-serif;
+    background-repeat: no-repeat;
+}

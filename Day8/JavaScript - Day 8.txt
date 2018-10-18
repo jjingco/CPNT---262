@@ -1,0 +1,20 @@
+ECMAScript 6 (ES6) 
+-so far we've covered ES5, but in order to catch us up with standards we 
+now need ES6
+-all codes (even if statements) need to be in a function
+	-even the variables need to be embedded --> no more globals 
+-const doesn't hold things constant, it's just holding a reference point
+	-so if you try to change the variable it won't work but if you try to 
+	add something on a const array you can add it 
+-for the arrows, if you only have one condition/parameter you don't
+need brackets, you only need brackets if you have multiple parameters 
+=let adNumbers = (a,b=10) --> the default parameter for b is 10
+-the rest operator creates a list from the values you give it
+-the spread operator takes an array and gives the values individually 
+-you can use either one with multiple parameters eg: 
+	let theArray = (num1,...array) => {
+		 console.log(array);} // [20,30,40]
+	theArray(10,20,30,40)// the first number is given value num1
+-ternary operator--> simplified if else statement
+-the reduce element takes an array and gives you the sum of the array
+	-it reduces it down to one value

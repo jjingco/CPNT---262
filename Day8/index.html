@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ES6 Tutorial</title>
+    <h1>Welcome to the ES6 Tutorial</h1>
+    <div id="target"></div>
+</head>
+<body>
+    
+</body>
+<script>
+// *************** ES6 TUTORIAL ************************
+
+    // //  you can use this to invoke the function greetPerson()
+    // (function() {
+    //     var name ='joy';
+    //     if (name) {
+    //         greetPerson(name);
+    //     }
+    // })
+    // // OR
+    // greetPerson(); //you can also use this to directly call the function greetPerson()
+    // // The function
+    // function greetPerson(name) {
+    //     console.log(name);
+    // }
+
+
+
+    // // LET VS VAR ---> when you replace let with var a is defined during the second console.log
+    // let condition = true;
+    // if (condition) {
+    //     let a = 'Zeta';
+    //     console.log(a); //ZETA
+    // }
+    // console.log(a); //undefined 
+
+
+
+    // // CONST KEYWORD 
+    // const arr = [1,2,3];
+    // const obj = {id:0, name:'Alpha'};
+    // // modify the array's contents --> no reassignment
+    // arr.push[4];
+    // console.log(arr);
+    // // modify the object's content --> no reassignment
+    // obj.name ='Joe';
+    // console.log(obj);
+
+    
+
+    // // BLOCK SCOPING
+    // const funcs = [];
+    // for (let i = 0; i < 3; i++) {
+    //     funcs.push(function(){
+    //         console.log(i);
+    //     });
+    // }
+    // for (let j = 0; j< funcs.length; j++) {
+    //     funcs[j]();
+    // }
+
+
+
+
+    // // ARROW SYMBOLS IN LIEU OF FUNCTION
+    // const sum = (num1, num2) => 
+    //     num1 + num2 
+    // console.log(sum(3, 4));
+    // const fibonacci = n => {
+    //     if (n < 3) {
+    //     return 1;
+    //     }
+    //     return fibonacci(n - 1) + fibonacci(n - 2);
+    // }
+    // console.log(fibonacci(9));
+
+    
+
+    // //DEFAULT PARAMETERS
+    // let multiply = (a,b=1) => {
+    //     if (!a) {
+    //         console.log("where's the first parameter?")
+    //     } else {
+    //         return a*b;
+    //     }
+    // }  
+    // console.log(multiply(5,4));
+    // console.log(multiply(4));
+    // console.log(multiply());
+
+
+
+    // // REST OPERATOR
+    // function product (...array) {
+    //     let numbers = [...array];
+    //     return numbers.reduce((currentProduct, number) => currentProduct * number, 1);
+    // }
+    // console.log(product(3, 4, 5));
+    // console.log(product (3, 4, 5, 6));
+    // console.log(product (1, 2, 3, 4, 5, 6));
+
+
+
+    // // SPREAD OPERATOR
+    // function join(array1,array2) {
+    // return array1.concat(...array2);
+    // }
+    // console.log(join([1, 2, 3], [4, 5, 6])); // [1, 2, 3, 4, 5, 6]
+
+
+
+    // // TEMPLATE LITERALS
+    // const user = {
+    //     name: 'Cody', 
+    //     loginCount: 1, 
+    //     goldStatus: true
+    // };
+    // const className = 'container';
+    // const html = `<div class=" ${className} ">
+    //                 <h2>Welcome ${user.name} ! </h2> 
+    //                 <p>Today is  ${new Date()}.</p>
+    //                 <p>You have logged in ${++user.loginCount} times.</p>
+    //             </div>`
+    // document.getElementById('target').innerHTML = html;
+
+    
+
+    // // DESTRUCTURING AN OBJECT
+    // const myEmployee = {
+    //     active: true,
+    //     department: 'Engineering'
+    //     };
+    // function isActiveEngineer(employee) {
+    //         const {active, department} = employee;
+    //         return department === 'Engineering' && active;
+    // }
+    // console.log(`Is myEmployee active? ${isActiveEngineer(myEmployee)}`);
+
+
+
+    // //FOR EACH OPERATOR
+    // const trips = [
+    //     { mph: 10, hours: 3 },
+    //     { mph: 30, hours: 2 },
+    //     { mph: 25, hours: 4 }
+    // ];
+    // trips.forEach(trip => {
+    //     console.log(trip.mph * trip.hours);
+    // });
+    
+
+
+    // // EVERY AND SOME
+    // const availableLaptops = [
+    //     { name: 'MacBook', RAM: 8 },
+    //     { name: 'Asus', RAM: 32 },
+    //     { name: 'Lenovo', RAM: 16 },
+    //     { name: 'HP', RAM: 4 }
+    // ];
+    // const everyLaptops = 
+    //     availableLaptops.every(laptop => laptop.RAM >= 16);
+    //     console.log(everyLaptops);
+    // const someLaptops = 
+    //     availableLaptops.some(laptop => laptop.RAM >= 16);
+    //     console.log(someLaptops);
+
+
+
+    // // FILTER
+    // // example:
+    // const users = [
+    //     {username:'ryan', active: true},
+    //     {username:'morgan', active: false}
+    // ];
+    // const activeUsers = users.filter(user => user.active);
+    // console.log(activeUsers);
+
+    // // Create an array of groceries 
+    // const groceries = [
+    //     { name: 'bananas', aisle: 'produce', price: 2 },
+    //     { name: 'flour', aisle: 'baking', price: 5 },
+    //     { name: 'avocados', aisle: 'produce', price: 4},
+    //     { name: 'lettuce', aisle: 'produce', price: 5 },
+    //     { name: 'olive oil', aisle: 'baking', price: 10 },
+    //     { name: 'shampoo', aisle: 'beauty', price: 12 }   
+    // ];
+    // const produceLessThan5 = groceries.filter (grocery => 
+    //         grocery.aisle ==="produce" && grocery.price < 5) 
+    // console.log(produceLessThan5);
+
+
+
+    // // MAPS
+    // const trips = [
+    //     { miles: 5, hours: 1},
+    //     { miles: 6, hours: 0.5},
+    //     { miles: 4, hours: 2 }
+    // ];
+    // const speeds = trips.map(trip => trip.miles/trip.hours )
+    // console.log(speeds);
+
+
+
+    // //FIND
+    // const posts = [
+    //     { id: 23, title: 'Becoming an ES6 Wizard', body: 'Ille vivere. Ut ad te ...' },
+    //     { id: 29, title: 'JavaScript Pro Tips', body: 'Pellentesque euismod ...' },
+    //     { id: 31, title: 'Acing your next JS interview', body: 'Lorem ipsum dolor sitamet...'}
+    // ];
+    // // Find the post with ID 29
+    // const currentId = 29;
+    // const currentPost = posts.find (post => post.id === currentId);
+    // console.log(currentPost.title); 
+    // console.log(currentPost.body);
+
+
+
+
+    // // REDUCE 
+    // const transactions = [5, 10, 15];
+    // const sum = transactions.reduce(function(currentSum, transaction){
+    //     return currentSum + transaction;
+    // }, 0);
+    // console.log(sum);
+
+    
+
+    // QUIZ:
+    // 1. EVERY
+    // 2. FOREACH
+    // 3. SOME
+    // 4. REDUCE
+    // 5. MAP
+    // 6. FILTER
+    // 7. FIND
+
+
+
+</script>
+
+</html>
