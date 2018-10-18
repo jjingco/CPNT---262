@@ -16,13 +16,10 @@ General
   /* * * * * * * * * * * * * * * * * * * * *
   Header
   * * * * * * * * * * * * * * * * * * * * */
-  header {
-      background: #251919
-  }
   
   .logo {
       width: 250px;
-      color: rgb(124, 226, 230);
+      color: rgb(0, 95, 100);
       margin-right: auto;
       font-family: 'Berkshire Swash', cursive;
       font-size: 1.5em;
@@ -46,7 +43,7 @@ General
   header ul li a {
       height: 66px;
       padding: 0 22px;
-      color: rgb(161, 227, 230);
+      color: rgb(0, 111, 117);
   
       display: flex;
       align-items: center;
@@ -66,7 +63,6 @@ General
   
   .menu {
       width: 300px;
-      background:  #251919;
       height: 100vh;
       position: absolute;
       top: 0;
@@ -96,7 +92,9 @@ General
       text-decoration: none;
       color: black;
   }
-
+  .wrapper {
+      height: 700px;
+  }
 /* * * * * * * * * * * * * * * * * * * * *
 Media Query
 * * * * * * * * * * * * * * * * * * * * */
@@ -121,7 +119,7 @@ Footer
 * * * * * * * * * * * * * * * * * * * * */
 footer {
     height: 150px;
-    background:#251919;
+    background:#2c2c2c;
     font-family: 'Open Sans', sans-serif;
 }
 
@@ -139,7 +137,7 @@ footer h2 {
 Index Page
 * * * * * * * * * * * * * * * * * * * * */
 .hero {
-    height: 900px;
+    height: 700px;
     background-image:  
         linear-gradient(
         180deg, 
@@ -149,7 +147,7 @@ Index Page
     background-size: cover;
     color:rgb(255, 255, 255);
     padding-top: 100px;
-    background-position: 50% 10%;
+    background-position: 30% 0%;
     font-family: 'Open Sans', sans-serif;
     background-repeat: no-repeat;
 }
