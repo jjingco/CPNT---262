@@ -26,7 +26,7 @@
                 <ul>
                     <li><a href="./index.html"> Home </a></li>
                     <li><a href="./vacation.html"> Vacations </a></li>
-                    <li><a href="./contact.html"> Contact Us </a></li>
+                    <li><a href="./contact.html"> Contact</a></li>
                     <li><a href="./customer-registration.html"> Register Now! </a></li>
                 </ul>
             </div>
@@ -43,7 +43,7 @@
                 <ul>
                     <li><a href="./index.html"> Home </a></li>
                     <li><a href="./vacation.html"> Vacations </a></li>
-                    <li><a href="./contact.html"> Contact Us </a></li>
+                    <li><a href="./contact.html"> Contact</a></li>
                     <li><a href="./customer-registration.html"> Register Now! </a></li>
                 </ul>
             </div>
@@ -51,21 +51,60 @@
     </header>
     <main>
         <div class="hero-registration">
-            <div class="container">
-            </div>
         </div>
-
-    <main>
         <div class="wrapper">
             <div class="container ">
-                <!-- still need about the company section -->
-
+                <div id="client-info">
+                    <form name="register">
+                        <p> <label> First Name:</label>
+                            <input type="text" name="firstN" id="firstN">
+                        </p>
+                        <p> <label> Last Name:</label>
+                            <input type="text" id="lastN" >
+                        </p>
+                        <p> <label> Address:</label>
+                            <input type="text" id="street">
+                        </p>
+                        <p> <label> City:</label>
+                            <input type="text" id="city" >
+                        </p>
+                        <p> <label> Province:</label>
+                            <input type="text" id="province" >
+                        </p>
+                        <p> <label> Postal Code:</label>
+                            <input type="text" id="postal" max="8" min="8" >
+                        </p>
+                        <p> <label> Email:</label>
+                            <input type="text" id="email" >
+                        </p>
+                        <p> <label> Phone Number:</label>
+                            <input type="text" id="phone" >
+                        </p>
+                        <p>
+                            <input type="submit" value="Go On Vacation!" id="submit" onclick="check()">
+                        </p>
+                    </form>
+                    <!-- completed message -->
+                    <p id="completed"> You're registration is completed!</p>
+                    <!-- error messages -->
+                    <p id="errorFirstN"> Please fill out your first name.</p>
+                    <p id="errorLastN"> Please fill out your last name.</p>
+                    <p id="errorAddress"> Please fill out your address.</p>
+                    <p id="errorCity"> Please fill out your city.</p>
+                    <p id="errorProvince"> Please fill out your province.</p>
+                    <p id="errorPostal"> Please fill out your postal code.</p>
+                    <p id="errorEmail"> Please fill out your email.</p>
+                    <p id="errorPhone"> Please fill out your phone number.</p>
+                </div>
+            </div>
+        </div>
     </main>
     <footer>
         <div id="date">
             <h2>Adventure is one day away:</h2>
+            <div id="clock"></div>
         </div>
     </footer>
-    <script src="./codes.js"></script>
+    <script src="./registration.js"></script>
 </body>
 </html>
