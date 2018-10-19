@@ -93,7 +93,6 @@ General
       color: black;
   }
   .wrapper {
-<<<<<<< HEAD
       height: 800px;
       text-align: center;
   }
@@ -101,10 +100,6 @@ General
 .mobile-menu, .menu{
     background-color: white;
 }
-=======
-      height: 900px;
-  }
->>>>>>> 3891d9215c080ea7532fbe82f3ac70727a8038a4
 /* * * * * * * * * * * * * * * * * * * * *
 Media Query
 * * * * * * * * * * * * * * * * * * * * */
