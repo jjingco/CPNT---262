@@ -41,6 +41,6 @@ var infoText = `<p> Serving vacation seekers since 2018, The International
                 <p> Don't wait for this opportunity to pass!</p> <p>Book today!</p>`;
 var companyInfo = document.getElementById('company-info');
 companyInfo.innerHTML = infoText;
-// if you have time add a book now button linking to your registration page
+
 
 
