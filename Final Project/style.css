@@ -93,6 +93,7 @@ General
       color: black;
   }
   .wrapper {
+<<<<<<< HEAD
       height: 800px;
       text-align: center;
   }
@@ -100,6 +101,10 @@ General
 .mobile-menu, .menu{
     background-color: white;
 }
+=======
+      height: 900px;
+  }
+>>>>>>> 3891d9215c080ea7532fbe82f3ac70727a8038a4
 /* * * * * * * * * * * * * * * * * * * * *
 Media Query
 * * * * * * * * * * * * * * * * * * * * */
@@ -187,6 +192,23 @@ Contact Page
     background-position: 50% 50%;
     font-family: 'Open Sans', sans-serif;
     background-repeat: no-repeat;
+}
+.wrapper {
+    text-align: center;
+}
+#agent {
+    padding: 10px;
+    margin-top: 75px;
+    background-color: rgb(0, 111, 117);
+    font-family:'Berkshire Swash', cursive;
+    color: white;
+    border:none;
+    font-size: 2em;
+}
+#agent-contact {
+    background-color: rgb(211, 238, 238);
+    height: 500px;
+    margin-top: 100px;
 }
 
 #agent {
