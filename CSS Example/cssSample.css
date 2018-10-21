@@ -1,0 +1,120 @@
+
+/* ************************  CSS SAMPLE PAGE ONLY ***************************** */
+body {
+    background-color: rgb(41, 23, 4);
+}
+#cssText {
+
+    color: white;
+    margin-bottom: 25px;
+    margin-top: 25px;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+}
+#cssText h3 {
+    font-style: italic;
+}
+.services-wrapper {
+    padding:70px 0;
+    background-image:  
+        url(../Pictures/Services-Page/joel-sparks-647390-unsplash.jpg);
+    background-size: cover;
+    background-position: 75% 50%;
+    background-repeat: no-repeat;
+    align-content: center;
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+.services-box1,
+.services-box2,
+.services-box3 {
+    height: 550px;
+    margin-bottom: 100px;
+    margin-right: auto;
+    opacity: 0.85;
+    background:linear-gradient(
+        180deg, 
+        rgba(0, 0, 0, 1), 
+        rgba(0, 0, 0, 0.5));
+    position: relative;
+    border: 1px solid peru;
+    overflow: hidden;
+}
+
+.services-box3 {
+    margin-right: 0;
+}
+
+.services-box-content {
+    opacity: 1;
+    color: white;
+}
+
+.services-box-content h1 {
+    font-family: 'Tangerine', cursive;
+    font-weight: 700;
+    font-size: 2.5em;
+    text-align: center;
+    margin-top: 100px;
+}
+
+
+.qualifications {
+    height: 250px;
+    margin-bottom: 0;
+    padding: 20px 30px 0px 30px;
+    margin-top: -130px;
+    transform: translate(0px, 400px);
+    position: relative;
+    line-height: 1.5em;
+}
+
+.border-box {
+    height: 250px;
+    width: 100%;
+    position: relative;
+    background: transparent;
+    transform: translate(0px, -150px);
+    border: 7px solid peru;
+    z-index: 1;
+}
+
+.services-box1:hover .border-box {
+    transition: 1s ease-in-out;
+    transform: translate(0px, 120px);
+}
+.services-box1:hover .qualifications {
+    transition: 1s ease-in-out;
+    transform: translate(0px, -5px);
+}
+
+.services-box2:hover .border-box {
+    transition: 1s ease-in-out;
+    transform: translate(0px, 120px);
+}
+.services-box2:hover .qualifications {
+    transition: 1s ease-in-out;
+    transform: translate(0px, -5px);
+}
+.services-box3:hover .border-box {
+    transition: 1s ease-in-out;
+    transform: translate(0px, 120px);
+}
+.services-box3:hover .qualifications {
+    transition: 1s ease-in-out;
+    transform: translate(0px, -5px);
+}
+
+
+.sampleBtn a {
+    background-color: white;
+    padding: 10px;
+    color: black;
+    text-decoration: none;
+}
+
+.sampleBtn a:hover {
+    background-color: aqua;
+}

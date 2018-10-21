@@ -1,0 +1,603 @@
+/* ************************   FOR ALL PAGES ********************************* */
+/* * * * * * * * * * * * * * * * * * * * *
+General
+* * * * * * * * * * * * * * * * * * * * */
+
+.wrapper {
+  width: 80%;
+  margin: 0 auto;
+  max-width: 1000px;
+}
+
+
+/* * * * * * * * * * * * * * * * * * * * *
+Header
+* * * * * * * * * * * * * * * * * * * * */
+header {
+    background:#432b07;
+}
+
+.logo {
+    width: 250px;
+    color: peru;
+    margin-right: auto;
+    font-family: 'Berkshire Swash', cursive;
+    font-size: 1.5em;
+    line-height: 0.9;
+
+}
+
+.logo span {
+    margin-left: 10px;
+}
+
+header ul {
+    margin-bottom: 0;
+    display: flex;
+    font-family: 'Open Sans', sans-serif;
+}
+
+header ul li {
+    list-style: none;
+}
+
+header ul li a {
+    height: 66px;
+    padding: 0 10px;
+    color: rgb(204, 151, 98);
+
+    display: flex;
+    align-items: center;
+}
+
+header ul li a:hover {
+    background: #ab7b3d; 
+    text-decoration: none;
+    color: black;
+}
+
+.hamburger-icon {
+    display: none;
+    background: transparent;
+    border: none;
+}
+
+.menu {
+    width: 300px;
+    background: #4e3208;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition:0.4s;
+    transform: translate(0px, 0px);
+    z-index: 1;
+}
+
+.closed {
+    transform: translate(-500px, 0px);
+}
+
+#close-button {
+    background: transparent;
+    color: #ab7b3d;
+    padding: 10px;
+    border: none;
+}
+
+header .mobile-menu ul {
+    display: block;
+}
+
+#close-button:hover {
+    background: #ab7b3d; 
+    text-decoration: none;
+    color: black;
+}
+
+
+
+/* * * * * * * * * * * * * * * * * * * * *
+Media Query
+* * * * * * * * * * * * * * * * * * * * */
+
+@media screen and (max-width: 800px) {
+
+    .hamburger-icon {
+        display: block;
+        color: rgb(204, 151, 98);
+    }
+    .desktop-menu ul {
+        display: none;
+    }
+    header {
+        height: 60px;
+    }
+}
+
+
+/* * * * * * * * * * * * * * * * * * * * *
+Footer
+* * * * * * * * * * * * * * * * * * * * */
+footer {
+    height: 250px;
+    background:#432b07;
+    font-family: 'Open Sans', sans-serif;
+}
+
+footer li a {
+    color:rgb(204, 151, 98);
+}
+
+.social-media {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    width: 60%;
+}
+
+.social-media li {
+    flex: 1;
+    padding-top: 50px;
+}
+
+footer p {
+    text-align: center;
+    padding-top: 40px;
+    font-size: 1.5em;
+    font-weight: bold;
+    color:rgb(204, 151, 98);
+}
+
+
+/* ************************  INDEX PAGE ONLY ***************************** */
+
+/* * * * * * * * * * * * * * * * * * * * *
+Hero
+* * * * * * * * * * * * * * * * * * * * */
+.heroI {
+    height: 725px;
+    background-image:  
+        linear-gradient(
+        180deg, 
+        rgba(0, 0, 0, 0.4), 
+        rgba(0, 0, 0, 0)), 
+        url(../Pictures/charlie-costello-301722-unsplash.jpg);
+    background-size: cover;
+    color:rgb(255, 255, 255);
+    padding-top: 100px;
+    background-position:  center bottom 100px;
+    font-family: 'Open Sans', sans-serif;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+
+.hero-contentI {
+    width: 60%;
+    height: 370px;
+    padding: 20px;
+}
+
+.heroI h1 {
+    font-family: 'Tangerine', cursive;
+    font-size: 3em;
+    margin: 0 0 50px 0;
+    font-weight: 700;
+
+}
+
+
+.heroI input  {
+    color: white;
+    border: none;
+    background: #fc5e24;
+    padding: 5px 20px;
+    text-decoration: none;
+    font-size: 0.85em;
+}
+
+.heroI input:hover {
+    cursor: pointer;
+    background: #8a513d;
+}
+
+.heroI-button {
+    margin-left: 20px;
+}
+
+@media screen and (max-width: 991px) {
+
+    .hero-contentI {
+        width: 100%;
+    }
+    .box1, .box2, .box3 {
+        margin-bottom: 10px;
+    }
+
+}
+
+/* * * * * * * * * * * * * * * * * * * * *
+Main
+* * * * * * * * * * * * * * * * * * * * */
+.main-wrapper {
+    min-height: 500px;
+    padding: 50px 0;
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+}
+
+
+.box1, .box2, .box3 {
+    height: 300px;
+    text-align: center;
+    color: white;
+    padding-top: 70px;
+    margin-right: auto;
+    box-shadow: 0px 10px 20px 0px grey;
+}
+
+
+.box1 {
+    background-image: linear-gradient(
+        180deg, 
+        rgba(0,0,0,0.4), 
+        rgba(0,0,0,0)), 
+        url(../Pictures/kira-auf-der-heide-330895-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.box1:hover {
+    opacity: 0.8;
+
+}
+
+.box2 {
+    background-image: linear-gradient(
+        180deg, 
+        rgba(0,0,0,0.4), 
+        rgba(0,0,0,0)), 
+        url(../Pictures/rana-sawalha-364253-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.box2:hover {
+    opacity: 0.8;
+
+}
+
+.box3 {
+    background-image: linear-gradient(
+        180deg, 
+        rgba(0,0,0,0.95), 
+        rgba(0,0,0,0)), 
+        url(../Pictures/chris-coe-425129-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+    margin-right: 0;
+}
+
+.box3:hover {
+    opacity: 0.8;
+
+}
+
+.paragraph {
+    padding: 20px 20px 80px 20px;
+    
+}
+
+main p {
+    padding-top: 15px;
+
+}
+
+
+main h1 {
+    font-family: 'Tangerine', cursive;
+    font-size: 4em;
+    font-weight: 700;
+}
+
+
+
+/* ************************  ABOUT PAGE ONLY ***************************** */
+
+/* * * * * * * * * * * * * * * * * * * * *
+Main
+* * * * * * * * * * * * * * * * * * * * */
+
+.about-wrapper  {
+    padding:50px;
+    background-image: 
+        linear-gradient(90deg, rgba(0,0,0,0.7), rgba(0,0,0,0)),
+        url(../Pictures/About-Page/ian-froome-367862-unsplash.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: 75% 70%;
+    opacity: 0.95;
+    background-repeat: no-repeat;
+    opacity: 0.90;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.about1 {
+    margin-top: 50px;
+    width: 80%;
+}
+
+
+.about2 {
+    margin-top: 50px;
+    width: 80%;
+    text-align: end;
+    color: white;
+    margin-left: auto;
+}
+
+
+.van-img1, .van-img2, .van-img3 {
+    height: 200px;
+    background: white;
+    margin-right: auto;
+    margin-bottom: 30px;
+    border:solid white;
+}
+
+.van-img1 {
+    background-image: url(../Pictures/About-Page/debbie-molle-653466-unsplash.jpg);
+    background-size: cover;
+    background-position: 50% 50%;
+}
+
+.van-img1:hover {
+    transform: scale(1.3);
+    z-index: 1;
+}
+
+.van-img2 {
+    background-image: url(../Pictures/About-Page/simon-zhu-1002610-unsplash.jpg);
+    background-size: cover;
+    background-position: 50% 20%;
+}
+
+.van-img2:hover {
+    transform: scale(1.3);
+    z-index: 1;
+}
+
+
+.van-img3 {
+    background-image: url(../Pictures/About-Page/mike-benna-570243-unsplash.jpg);
+    background-size: cover;
+    margin-right: 0;
+}
+
+.van-img3:hover {
+    transform: scale(1.3);
+    z-index: 1;
+}
+
+.about1-cont {
+    margin-top: 50px;
+}
+
+.about-text {
+    margin-bottom: 50px;
+}
+
+/* ************************  SERVICES PAGE ONLY ***************************** */
+
+/* * * * * * * * * * * * * * * * * * * * *
+Main
+* * * * * * * * * * * * * * * * * * * * */
+.services-wrapper {
+    padding:70px 0;
+    background-image:  
+        url(../Pictures/Services-Page/joel-sparks-647390-unsplash.jpg);
+    background-size: cover;
+    background-position: 75% 50%;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    align-content: center;
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+.services-box1,
+.services-box2,
+.services-box3 {
+    height: 550px;
+    margin-bottom: 100px;
+    margin-right: auto;
+    opacity: 0.85;
+    background:linear-gradient(
+        180deg, 
+        rgba(0, 0, 0, 1), 
+        rgba(0, 0, 0, 0.5));
+    position: relative;
+    border: 1px solid peru;
+}
+
+.services-box3 {
+    margin-right: 0;
+}
+
+.services-box-content {
+    opacity: 1;
+    color: white;
+}
+
+.services-box-content h1 {
+    font-family: 'Tangerine', cursive;
+    font-weight: 700;
+    font-size: 2.5em;
+    text-align: center;
+    margin-top: 100px;
+}
+
+
+.qualifications {
+    height: 250px;
+    margin-bottom: 0;
+    padding: 20px 30px 0px 30px;
+    margin-top: -130px;
+    transform: translate(0px, 0px);
+    position: relative;
+    line-height: 1.5em;
+}
+
+
+
+.border-box {
+    height: 250px;
+    width: 100%;
+    position: relative;
+    background: transparent;
+    transform: translate(0px, -150px);
+    border: 7px solid peru;
+    z-index: 1;
+}
+
+.services-box1:hover .border-box {
+    transition: 0.6s ease-in-out;
+    transform: translate(0px, 120px);
+}
+
+.services-box2:hover .border-box {
+    transition: 0.6s ease-in-out;
+    transform: translate(0px, 120px);
+}
+
+
+.services-box3:hover .border-box {
+    transition: 0.6s ease-in-out;
+    transform: translate(0px, 120px);
+}
+
+
+
+
+/* ************************  CONTACT  PAGE ONLY ***************************** */
+
+/* * * * * * * * * * * * * * * * * * * * *
+Header
+* * * * * * * * * * * * * * * * * * * * */
+
+.heroC {
+    height: 625px;
+    background-image: 
+    linear-gradient(90deg,
+        rgba(0,0,0,0.8),
+        rgba(0,0,0,0)),
+    url(../Pictures/Contact-Page/JoyJingcoVacationPic.jpg);
+    background-size: cover;
+    color: rgb(107, 71, 34);
+    padding-top: 100px;
+    background-position:  75% 50%;
+    font-family: 'Open Sans', sans-serif;
+    background-repeat: no-repeat;
+}
+
+
+.heroC-content {
+    width: 60%;
+    height: 370px;
+    color: rgb(243, 186, 0);
+    padding: 20px;
+    margin-bottom: 50px;
+    opacity: 0.9;
+}
+
+.heroC-content h1 {
+    font-family: 'Tangerine', cursive;
+    font-size: 5em;
+    margin: 0;
+    font-weight: 700;
+}
+
+.heroC hr {
+    background:#ff9900;
+    margin-top: 0;
+    opacity: 0;
+}
+
+.heroC button {
+    color: white;
+    border: none;
+    background: #ef7547;
+    padding: 0 10px;
+}
+
+.heroC button:hover {
+    cursor: pointer;
+    background: #f18a64;
+}
+
+
+.email {
+    padding-left: 5px;
+}
+
+.textbox {
+    padding-top: 10px;
+}
+
+input {
+    font-size: 12px;
+    padding-right: 40px;
+}
+
+@media screen and (max-width: 991px) {
+
+    .heroC-content {
+        width: 100%;
+    }
+    .heroC-content h1{
+        font-size: 4em;
+    }
+}
+/**************************************
+EXAMPLES TAB
+**************************************/
+.language{
+    height: 300px;
+    text-align: center;
+    color: white;
+    background-color: rgb(66, 172, 172);
+    padding-top: 70px;
+    margin-right: auto;
+    box-shadow: 0px 10px 20px 0px grey;
+    margin: 20px 5px 20px 5px;
+}
+.language .finishedSample {
+    margin-bottom: 50px;
+}
+#langBtm1, #langBtm2, #langBtm3 {
+    margin-bottom: 50px;
+}
+.navigation {
+    margin-top: 25px;
+}
+.htmlPage {
+    background-color: whitesmoke;
+    padding: 5px;
+}
+.gitHublink {
+    background-color: rgb(149, 226, 231);
+    padding: 5px;
+    margin-top: 5px;
+}
+.htmlPage:hover,.gitHublink:hover {
+    background-color: aqua;  
+}
+
+.navigation a {
+    color: black;
+    font-weight: bold;
+    text-decoration: none; 
+}
+
